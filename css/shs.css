@@ -1,0 +1,62 @@
+.fb-icon{
+    max-height: 23px;
+}
+
+h1 {
+    color: wheat;
+}
+
+h2 {
+    color: wheat;
+}
+
+h3 {
+    color: wheat;
+}
+
+.over-image-text {
+    text-shadow: 0px 0px 10px black;
+}
+
+.intro-text {
+    font-size: 16px;
+}
+
+.logo-bg {
+    /*width: 100%;*/
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/logo-dark.jpg) no-repeat center center scroll;
+    background-color: #000;
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
+}
+
+.soundcloud-iframe {
+    border:none;
+    overflow:hidden;
+    margin:0;
+    height:300px;
+    width:100%;
+}
+
+
+.small-image {
+    width: 180px;
+    margin: 10px;
+    text-shadow: 0px 0px 0px black;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.big-image {
+    text-shadow: 0px 0px 0px black;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.shs-bar {
+    background-image: url('/img/small-logo.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}

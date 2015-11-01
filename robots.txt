@@ -1,0 +1,4 @@
+# robots.txt for www.soulharveststudios.com
+User-agent: *
+Allow: /
+

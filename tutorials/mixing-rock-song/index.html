@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <meta property="og:title" content="Mixing a rock song"/>
+    <meta property="og:site_name" content="Soul Harvest Studios"/>
+    <meta property="og:url" content="http://www.soulharveststudios.com/tutorials/mixing-rock-song/"/>
+    <meta property="og:description" content="Detailed steps on how to mix a rock song"/>
+    <meta property="og:image" content="http://www.soulharveststudios.com/img/share-logo.jpg"/>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Soul Harvest Studios - Mixing a rock song</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/grayscale.css" rel="stylesheet">
+
+    <link href="/css/shs.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-58135386-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="over-image-text navbar-brand page-scroll" href="/">
+                Back to Soul Harvest Studios
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="over-image-text">
+                    <a class="over-image-text navbar-brand page-scroll" href="#">
+                        Guide: Mixing a rock song
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+
+<section id="intro" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 over-image-text">
+            <h1>Mixing a rock song</h1>
+
+            <p>After recording all the instruments in a song, you end up with a bunch of files in your computer that add
+                little to human cultural progress. If everything went according to plan, you’re now a proud owner of a
+                diamond in the rough… at best. If not, you’ll find out soon enough.</p>
+
+            <div class="thumbnail big-image">
+                <img alt="Two guys in a tight place, recording guitar"
+                     title="Tracking guitars for JFTI at Soul Harvest Studios" class="img-responsive"
+                     src="tracking-guitar.jpg"/>
+
+                <div class="caption">
+                    A guitar tracking session
+                </div>
+            </div>
+
+            <p>During the last months, <a href="https://www.facebook.com/pages/JáFoiTudoInventado-JFTI/187323597970550">JFTI</a>,
+                a Portuguese rock band from <a
+                        href="https://www.google.pt/maps/place/Peniche/@39.3372613,-9.3326849,12z/data=!3m1!4b1!4m2!3m1!1s0xd1f45b08a64629b:0x400ebbde4903650">Peniche</a>,
+                spent some days at Soul Harvest Studios
+                (<a href="https://www.google.pt/maps/place/Alfeizer%C3%A3o/@39.4883597,-9.0991309,13z/data=!3m1!4b1!4m2!3m1!1s0xd18add522e3ec7f:0xfb7bc3af0bf635da">Alfeizerão</a>),
+                recording drums, bass, guitars and voice for their upcoming album. All this work was led
+                by Diogo Simão, I’ve only picked it up by now, at the mixing stage. This gave me a good opportunity to
+                document how I approach mixing a standard, bass-guitar-drums-voice rock song, while explaining and
+                exposing with some detail the decisions I make along the way. I will be writing this article as I go, so
+                I will try to have a decent mix at first try… fingers crossed.</p>
+
+            <p>The mixing process is somewhat a creative activity, but there are also a lot of best practices involved.
+                Do take this guide with a grain of salt and feel free to <a href="mailto:tiagosimao@gmail.com">give me
+                    feedback</a>, especially if you find
+                something inaccurate, wrong or plain stupid.</p>
+
+            <p>The song I'm attempting to mix is called Cegueira (Portuguese for blindness) and consists of a total of
+                29
+                (96kHz 24 bits mono) recorded tracks, handed to me by Diogo Simão in .wav format through the internet.
+                Track list follows:</p>
+            <ul>
+                <li>1 bass track</li>
+                <li>3 vocal tracks: 1 for lead vocals and 2 for backing vocals</li>
+                <li>4 clean guitar tracks generated from 2 recorded takes: 2 reamped through a Carvin Quad and 2 through
+                    a Marshall JCM 900
+                </li>
+                <li>4 lead guitar tracks generated from 2 recorded takes: 2 reamped through a Preavey 6505 and 2 through
+                    a Mesa Boogie Triple Rectifier
+                </li>
+                <li>6 distorted rhythm guitar tracks generated from 2 recorded takes: 2 reamped through a Preavey 6505,
+                    2 through a Mesa Boogie Triple Rectifier and 2 through a Marshall JCM 900
+                </li>
+                <li>11 drum tracks: sub-kick, inside-kick, snare top, snare bottom, tom 1, tom 2, tom 3 top, tom 3
+                    bottom, overhead left, overhead right and mono ambience.
+                </li>
+            </ul>
+            <p>These tracks, in the form of uncompressed .wav files, are the starting point of the mixing process. As of
+                now and for a big number of reasons, they sum up to a big mono mess.</p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+
+            <img class="col-lg-5 pull-left" src="monomess.png">
+
+            <div class="col-lg-7">
+                <h4>Starting point</h4>
+
+                <div class="media">
+                    <audio src="mono-sum.wav" preload="none" controls="controls"></audio>
+                </div>
+                The sum of all 29 mono tracks given to me The sum of all 29 mono tracks given to me The sum of all 29
+                mono tracks given to me The sum of all 29 mono tracks given to me
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 over-image-text">
+            <p> This doesn’t mean that our raw
+                material sounds bad. When recording, our focus should be getting the best and the most out of each
+                instrument and not worrying too much about the sum.
+                Mixing is about making the sum sound great, many times by making each instrument sound a bit “worse”.
+                That’s why the “fix it in the mix” kind of thing summons so much hate. It makes no sense. If you got
+                something wrong while recording an instrument, it will probably get even worse in the mix.</p>
+
+            <p>I start by importing all the files to a new project (in my case, using Cubase), playing them out to check
+                if everything is OK, grouping and naming them in a way that suits my work method. I will also create
+                some
+                submix channels in order to easily control each instrument as a whole, and to create stereo image on
+                some of them (all except the bass actually), by hard-panning the guitar takes, the back vocal takes and
+                the overhead mics. This song has the following 7 instruments: Lead voice, background voice, bass guitar,
+                clean electric guitar, distorted electric guitar, lead electric guitar and drums.</p>
+
+            <p>
+                <audio src="stereo-sum.wav" preload="none" controls="controls"></audio>
+                <br/>After paning the tracks, this is what Cubase says when I press play
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Article Split -->
+<section id="ad1" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 over-image-text">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6287313681236411"
+                 data-ad-slot="2693106609"
+                 data-ad-format="auto"></ins>
+        </div>
+    </div>
+</section>
+
+<section id="drums" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 over-image-text">
+            <h2>Drums</h2>
+
+            <p>
+                I’ll start with the drums, since it’s the most complex instrument to mix in this song. I’m sure to find
+                many bleed, phase and dynamic issues in a 11 mic drum recording.
+                I solo the drum submix first to get an overall notion of what we’re looking at. The kick has little
+                volume, the toms are too loud and the snare is to harsh… but that’s pretty much how a drum sounds with
+                this mic setup.
+            </p>
+
+            <p>
+                <audio src="drums-before.wav" preload="none" controls="controls"></audio>
+                <br/>The raw drums
+            </p>
+
+            <h3>Overheads</h3>
+
+            <p>
+                <audio src="oh-before.wav" preload="none" controls="controls"></audio>
+                <br/>Overheads@before
+            </p>
+            <p>
+                The overheads were recorded using the ORTF mic placement. It’s important to know how the mics are placed
+                in
+                the room, so you can know what to expect. Stuff like M/S mic positioning doesn’t make sense if who is
+                going
+                to mix is unaware of this.
+                I routed both overhead mics to a stereo group, removed the low frequencies (< 200Hz) and used a fast
+                attack
+                compressor to lower the snare, toms and kick drums transient information while enhancing the sound
+                between
+                each hit (mainly cymbal sustain).
+            </p>
+
+            <p>
+                <audio src="oh-after.wav" preload="none" controls="controls"></audio>
+                <br/>Overheads@after
+            </p>
+
+
+            <h3>Subkick</h3>
+
+            <p>
+                <audio src="subkick-before.wav" preload="none" controls="controls"></audio>
+                <br/>Subkick@before
+            </p>
+            <p>
+                From this mic, I only want to use the low end, so a very aggressive low-pass is in order. Everything
+                above
+                100Hz will be discarded. Let’s not forget that the other kick drum also captures low-end information and
+                I
+                don’t want the two competing with each other. A slow 3:1 compressor is also applied to keep the dynamic
+                range in check. Using a fast attack compressor would cut off the low frequency transient information.
+                Not
+                only we don’t want that, we also don’t need the stuff happening between kick hits, so a gate (fast
+                attack
+                and fast release) is in order, as it will help to remove much of the bleed coming from the other drum
+                pieces. After doing all this, this track should sound like a heart thumping.
+            </p>
+
+            <p>
+                <audio src="subkick-after.wav" preload="none" controls="controls"></audio>
+                <br/>Subkick@after
+            </p>
+
+            <h3>Kick</h3>
+
+            <p>
+                <audio src="kick-before.wav" preload="none" controls="controls"></audio>
+                <br/>Kick@before
+            </p>
+            <p>
+                Since we already have a good low end from the subkick, I don’t need to struggle to get that from this
+                mic, I
+                can instead concentrate in getting a good kick drum sound. To sound like a cool rock kick drum, I’ll
+                notch
+                that 150Hz-ish sound, increasing the contrast between the low end and the mids. I might also come back
+                to
+                boost the batter sound (somewhere from 3 to 7 kHz) Except for the EQ, I’ll do an identical processing as
+                I
+                did for the subkick (compressor and gate-wise).
+                Now I check the phase between the kick and the subkick and tweek it if necessary. This is a critical
+                detail,
+                specially in low-end instruments. An off-phase sub-kick/kick will pretty much destroy your mix!
+            </p>
+
+            <p>
+                <audio src="kick-after.wav" preload="none" controls="controls"></audio>
+                <br/>Kick@after
+            </p>
+            <p>
+                <audio src="kickdrum-after.wav" preload="none" controls="controls"></audio>
+                <br/>Kick + Subkick@after
+            </p>
+
+            <h3>Bottom Snare</h3>
+
+            <p>
+                <audio src="snare-bottom-before.wav" preload="none" controls="controls"></audio>
+                <br/>Bottom Snare@before
+            </p>
+            <p>
+                The sole purpose of this mic is to get more snap from the snare so I’ll gate it and only use above
+                250-300Hz. Since the snare drum has such an extreme dynamic range, I’ll use a hash compressor with fast
+                attack in this sound source.
+            </p>
+
+            <p>
+                <audio src="snare-bottom-after.wav" preload="none" controls="controls"></audio>
+                <br/>Bottom Snare@after
+            </p>
+
+            <h3>Top Snare</h3>
+
+            <p>
+                <audio src="snare-top-before.wav" preload="none" controls="controls"></audio>
+                <br/>Top Snare@before
+            </p>
+            <p>
+                This is one of the most important tracks in a rock mix. I just keep coming back to this during the whole
+                mix
+                process. Eitherway I start with a low-cut on the 100Hz, gate and compressor. This particular recording
+                has a
+                lot of bleed from the cymbals so we may have some problems here, as all the processing I apply to this
+                track
+                is equally applied to whatever bleeds in.
+                Again I check the phase between the top and bottom snare mics.
+            </p>
+
+            <p>
+                <audio src="snare-top-after.wav" preload="none" controls="controls"></audio>
+                <br/>Top Snare@after
+            </p>
+            <p>
+                <audio src="snaredrum-after.wav" preload="none" controls="controls"></audio>
+                <br/>Top + Bottom Snare@after
+            </p>
+            <h3>Toms</h3>
+
+            <p>
+                A common mistake when mixing drums is to treat all toms as if they were the same thing. They are not.
+                Their
+                placement, tuning, mic placement, preamp gain, bleed, etc... is seldom the same as is the resulting
+                sound.
+                A second mic was used in the third tom, pointed at the bottom head, so I want to look at that with some
+                attention.
+                This drumset has 3 toms used in some breaks during the song. I got them already (manually) gated, so I
+                don’t
+                have to use any gate on them and that’s great.
+            </p>
+
+            <h3>10’’ Tom</h3>
+
+            <p>
+                <audio src="tom1-before.wav" preload="none" controls="controls"></audio>
+                <br/>10'' Tom@before
+            </p>
+            <p>
+                I start by low-cutting 100Hz to remove rumble. This tom is only played twice during the song, so I would
+                manually gate it either way. It sounds pretty good to me so I won’t EQ it. I use a bit of slow
+                compression
+                and pan it according to what I hear in the now-stereo overheads. In this case, slightly to the left.</p>
+
+            <p>
+                <audio src="tom1-after.wav" preload="none" controls="controls"></audio>
+                <br/>10'' Tom@after
+            </p>
+            <h3>12’’ Tom</h3>
+
+            <p>
+                <audio src="tom2-before.wav" preload="none" controls="controls"></audio>
+                <br/>12'' Tom@before
+            </p>
+            <p>
+                Unlike the first tom, this one seems to have an unbalanced sound. I applied a notch on the 200Hz, on top
+                of
+                an 100Hz low cut, compress it and pan it slightly to the right. Again trying to match what I hear in the
+                overheads. I compare it to the first tom and adjust the volume fader to even them out.</p>
+
+            <p>
+                <audio src="tom2-after.wav" preload="none" controls="controls"></audio>
+                <br/>12'' Tom@after
+            </p>
+            <h3>14’’ Tom</h3>
+
+            <p>
+                <audio src="tom3-top-before.wav" preload="none" controls="controls"></audio>
+                <br/>14'' Tom Top@before
+            </p>
+            <p>
+                <audio src="tom3-bottom-before.wav" preload="none" controls="controls"></audio>
+                <br/>14'' Tom Bottom@before
+            </p>
+            <p>
+                Many of the breaks finish on this tom and are followed by a crash hit that unfortunately bleeds in quite
+                severely in the top mic. I want to fix this so I will reduce “gate” release, by fading out the tom sound
+                sooner. Unfortunately this will greatly reduce it’s sustain. Again, the mix will hopefully sound better
+                by
+                chopping stuff out of an instrument.
+                Since we have two mics for this drum piece, phase is an issue. Keeping that in mind, I use a 100Hz low
+                cut
+                on the top mic and a 200 Hz hi cut on the bottom. I pan the top to the right and keep the bottom in the
+                center of the mix since I don’t want any bass off-center.
+            </p>
+
+            <p>
+                <audio src="tom3-top-after.wav" preload="none" controls="controls"></audio>
+                <br/>14'' Tom Top@after
+            </p>
+            <p>
+                <audio src="tom3-bottom-after.wav" preload="none" controls="controls"></audio>
+                <br/>14'' Tom Bottom@after
+            </p>
+            <p>
+                <audio src="tom3-after.wav" preload="none" controls="controls"></audio>
+                <br/>14'' Tom Top + Bottom@after
+            </p>
+            <h3>Ambience</h3>
+
+            <p>
+                <audio src="amb-before.wav" preload="none" controls="controls"></audio>
+                <br/>Ambience@before
+            </p>
+            <p>
+                A single mic was used to record room sound. This can be used in many creative ways and I chose to use it
+                like the side mic of a M/S mic pair. To do this, I hard-left-paned this to a stereo track,
+                hard-right-paned
+                an inverted (phase) copy of it.
+                The result is a stereo track that when summed to mono results is nothing.
+                This means that the drum room will only be heard in stereo systems.
+                I also delayed the sound by a few milliseconds, to emulate a larger room.
+            </p>
+
+            <p>
+                <audio src="amb-after.wav" preload="none" controls="controls"></audio>
+                <br/>Ambience@after
+            </p>
+            <h3>Buss compression</h3>
+
+            <p>
+                Additionally I added a mono track to where I routed a copy of the processed kick, snare, tom1, tom2 and
+                tom3. Used an extreme compression on this new track and hi-cutted everything above 10kHz. This track can
+                be
+                blend with the drum mix in order to get more or less aggressive drums.
+            </p>
+
+            <p>
+                <audio src="ny.wav" preload="none" controls="controls"></audio>
+                <br/>Buss compression
+            </p>
+
+            <p>
+                <audio src="drums-after.wav" preload="none" controls="controls"></audio>
+                <br/>Drums@after
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Section split -->
+<section id="ad2" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 over-image-text">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6287313681236411"
+                 data-ad-slot="1096792202"
+                 data-ad-format="auto"></ins>
+        </div>
+    </div>
+</section>
+
+
+<section id="bass" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 over-image-text">
+            <h2>Bass</h2>
+
+            <p>This bass track was recorded directly into an audio interface so, no bleed or acoustic noises exist. Also
+                since it’s a single sound source, no phase issues here too.
+                I start by splitting the bass signal in two. One will have the bass full sound, while the other will
+                have a distorted copy. Whether the bass sounds more or less distorted can then be automatized along the
+                song later on.
+                I apply a hard and fast compression to the main bass track, since I don’t want low-frequency transient
+                from the bass, only low-frequency sustain. I also cut some volume around 400Hz in order to get some room
+                for the distorted guitars and drums.
+                Now comes the tricky part: setting the bass and kick drum apart. This can make or break a mix. Low
+                frequencies are fat and slow, so if an instrument is doing its stuff let’s say around 80Hz, no other can
+                be messing around there at the same time. There are several ways to do this, but no safe recipe. In this
+                mix I will try to boost the kick on a frequency where I notch the bass, while in other relatively close
+                frequency I do the opposite. Let’s say on 60Hz I boost the kick and cut the bass, while on 80 Hz I boost
+                the bass and cut the kick. The Q of these EQs have to be very high.</p>
+
+            <p>
+                <audio src="bass-before.wav" preload="none" controls="controls"></audio>
+                <br/>Bass@before
+            </p>
+            <p>
+                <audio src="bass-after.wav" preload="none" controls="controls"></audio>
+                <br/>Bass@after
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="guitars" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 over-image-text">
+            <h2>Guitars</h2>
+
+            <p>Using the same guitar take to feed several amps or using more than one mic on the same amp can and will
+                cause phase problems. This is the first thing I try to find and fix. Realizing the tracks are out of
+                phase after mixing, basically forces me to start all over again.
+                In this song, the clean, the lead and the rhythm guitars all use more than one amp.
+            </p>
+
+            <h3>Clean guitars</h3>
+
+            <p>From the original two clean guitar takes, 4 tracks came out. I simply hard-paned each take, putting both
+                de Carvin and the Marshall on both sides, did some low-cutting on the 100Hz and a soft ratio, fast
+                attack compression to mellow out those strumming peaks.</p>
+
+            <p>
+                <audio src="clean-guitars-after.wav" preload="none" controls="controls"></audio>
+                <br/>Clean Guitars@after
+            </p>
+            <h3>Distorted guitars</h3>
+
+            <p>Tri-amping was the way to go and I make no plans on discarding anything. I hard-paned each of the three
+                amps both left and right, same way as I did with the clean guitars. As of now I won’t mess with the
+                relative volumes, all the amps bring different things to the table and I want to see how far can I get
+                without starting to cut off some of their tone. Besides the 100Hz low cut, there is no signal processing
+                on these tracks.</p>
+
+            <h3>Lead guitars</h3>
+
+            <p>In this song, the lead guitars appear during the chorus and while the voice is loud and proud, so I won’t
+                try to give it lead guitar aesthetics. Instead I’ll try to use them as a stereo guitar layer. We already
+                have 6 tracks of distorted guitars, so we’ll have to find some space left in the mix to cram 4 more
+                tracks. I’ll do so by reducing the low-frequency information on these lead tracks and by slightly
+                boosting some mids. I have to be careful so the overall guitars don’t sound suddenly louder when the
+                lead comes up. To achieve this I will lower the other distorted guitars slightly when these come up,
+                much like a manual compressor.
+            </p>
+
+            <p>
+                <audio src="dist-guitars-after.wav" preload="none" controls="controls"></audio>
+                <br/>Distorted Guitars@after
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="voice" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 over-image-text">
+            <h2>Voice</h2>
+
+            <h3>Lead voice</h3>
+
+            <p>It’s a single well sung mono track so I’ll try not to ruin it. Low cut on 100Hz a loads of compression
+                will do just fine for now.
+            </p>
+
+            <h3>Background voice</h3>
+
+            <p>Hard paned, 100Hz cut, a somewhat aggressive de-hisser and heavy compression are in order here. Some part
+                of the songs have mellow falsetto voicings while others have screams so I will use automation to control
+                both the volume and the amount of effect (delay) used here.</p>
+
+            <p>
+                <audio src="voice-before.wav" preload="none" controls="controls"></audio>
+                <br/>Voice@before
+            </p>
+            <p>
+                <audio src="voice-before.wav" preload="none" controls="controls"></audio>
+                <br/>Voice@after
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="end" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 over-image-text">
+            <h2>Final Mix</h2>
+
+            <p>Just by summing all of the above we get a decent starting point, but to do a great mix we must revisit
+                all the instruments, several times, while listening to the final result. It's a cyclic process that ends
+                whenever
+                you say it's enough.
+            </p>
+
+            <p>
+                <audio src="after.wav" preload="none" controls="controls"></audio>
+                <br/>After mix
+            </p>
+            <p>Thanks for listening
+            </p>
+
+            <p><i>- <a href="https://www.facebook.com/tiagosimao">Tiago Simão</a></i></p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/js/jquery.easing.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/grayscale.js"></script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script type="application/javascript">
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</body>
+</html>
